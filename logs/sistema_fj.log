@@ -1,0 +1,22 @@
+2026-11-16 15:48:35 | INFO     | === INICIO DE SESIÓN DEL SISTEMA SOFTWARE FJ ===
+2026-11-16 15:48:35 | INFO     | Cliente registrado en memoria: Cliente [CLI-001] | Laura Valentina Mendoza | Doc: 1090456789 | Email: laura.mendoza@correo.com | Reservas: 0
+2026-11-16 15:48:35 | INFO     | Cliente registrado en memoria: Cliente [CLI-002] | Carlos Andrés Pérez | Doc: 88234567 | Email: carlos.perez@empresa.co | Reservas: 0
+2026-11-16 15:48:35 | ERROR    | Operación 3 controlada: [ERR-DATO-001] Correo electrónico con formato inválido: 'correo_sin_arroba.com'.
+2026-11-16 15:48:35 | INFO     | Servicio registrado en memoria: [SRV-01] Sala 'Sala Innovación Norte' (Capacidad: 15 pers., con VideoBeam) - $80,000/hora | Estado: Disponible
+2026-11-16 15:48:35 | INFO     | Servicio registrado en memoria: [SRV-02] Alquiler Equipo 'Workstation Dell Precision' [Cat: Cómputo Alto Rendimiento] - $45,000/hora + Garantía $100,000 | Estado: Disponible
+2026-11-16 15:48:35 | INFO     | Servicio registrado en memoria: [SRV-03] Asesoría 'Auditoría Cloud AWS' [Cloud Computing - Consultor Senior] - $120,000/hora | Estado: Disponible
+2026-11-16 15:48:35 | ERROR    | Operación 7 controlada: [ERR-DATO-001] La tarifa base debe ser un número positivo. Recibido: -50000
+2026-11-16 15:48:35 | INFO     | Reserva creada en memoria: Reserva [RES-101] | Estado: PENDIENTE | Cliente: Laura Valentina Mendoza | Servicio: Sala Innovación Norte | Duración: 4h | Total: $369,495.00
+2026-11-16 15:48:35 | INFO     | Reserva RES-101 CONFIRMADA para Laura Valentina Mendoza | Total: $369,495.00
+2026-11-16 15:48:35 | INFO     | Auditoría de transición ejecutada sobre RES-101 (Estado: CONFIRMADA).
+2026-11-16 15:48:35 | INFO     | Reserva RES-101 PROCESADA exitosamente. Valor final facturado: $369,495.00
+2026-11-16 15:48:35 | INFO     | Cierre de transacción de procesamiento para RES-101.
+2026-11-16 15:48:35 | ERROR    | Operación 9 controlada: [ERR-DATO-001] El alquiler de equipos requiere mínimo 2 horas y máximo 72 horas. Solicitado: 1
+2026-11-16 15:48:35 | INFO     | Reserva creada en memoria: Reserva [RES-103] | Estado: PENDIENTE | Cliente: Carlos Andrés Pérez | Servicio: Auditoría Cloud AWS | Duración: 3h | Total: $508,725.00
+2026-11-16 15:48:35 | INFO     | Reserva RES-103 CONFIRMADA para Carlos Andrés Pérez | Total: $508,725.00
+2026-11-16 15:48:35 | INFO     | Auditoría de transición ejecutada sobre RES-103 (Estado: CONFIRMADA).
+2026-11-16 15:48:35 | WARNING  | Reserva RES-103 CANCELADA. Motivo: El cliente solicitó reprogramar la auditoría para la próxima semana.
+2026-11-16 15:48:35 | ERROR    | Fallo en procesamiento de RES-103: [ERR-OPER-004] La reserva RES-103 debe estar CONFIRMADA para procesarse (Estado actual: 'CANCELADA').
+2026-11-16 15:48:35 | INFO     | Cierre de transacción de procesamiento para RES-103.
+2026-11-16 15:48:35 | ERROR    | Operación 11 controlada (Encadenada): [ERR-OPER-004] Imposible procesar la reserva RES-103 debido a un error operativo. | Causa: [ERR-OPER-004] La reserva RES-103 debe estar CONFIRMADA para procesarse (Estado actual: 'CANCELADA').
+2026-11-16 15:48:35 | ERROR    | Operación 12 controlada: [ERR-SERV-003] El servicio 'Workstation Dell Precision' (SRV-02) no se encuentra disponible actualmente.
